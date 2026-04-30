@@ -136,7 +136,6 @@ body {
   overflow: hidden;
   user-select: none;
   width: 100%;
-  /* Ensures the container respects RTL flow */
   direction: rtl;
 }
 
@@ -145,8 +144,12 @@ body {
   display: flex;
   white-space: nowrap;
   min-width: 100%;
-  /* Adjust '30s' to change speed */
   animation: scroll-rtl 50s linear infinite;
+}
+
+/* Second copy starts immediately after the first — no gap */
+.marquee-content:nth-child(2) {
+  animation-delay: -25s;
 }
 
 .marquee-container:hover .marquee-content {
@@ -155,16 +158,13 @@ body {
 
 @keyframes scroll-rtl {
   from {
-    /* Starts completely hidden on the left side */
     transform: translateX(-100%);
   }
 
   to {
-    /* Ends completely hidden on the right side */
     transform: translateX(100%);
   }
 }
-
 
 
 

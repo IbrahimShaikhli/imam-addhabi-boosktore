@@ -56,6 +56,7 @@ export default function Navbar() {
             <div className="marquee-content whitespace-nowrap transition-colors hover:text-[var(--color-gold)]">
               📢 جديد الكتب: مدارج السالكين - للإمام ابن القيم الجوزية، مصحف القيام حجمين، القرآن تدبر وعمل حجمين 💡 قال العلامة ابن عثيمين رحمه الله: ينبغي لطالب العلم أن يحرص على جمع الكتب، ولكن يبدأ بالأهم فالأهم 📚 وقال رحمه الله: الكتب غذاء للروح كالطعام والشراب للبدن 📢
             </div>
+
           </div>
 
 
