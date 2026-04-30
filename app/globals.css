@@ -129,6 +129,47 @@ body {
   border-bottom: 1px solid var(--color-border-light);
 }
 
+
+/* Custom Marquee Animation */
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
+  /* Ensures the container respects RTL flow */
+  direction: rtl;
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  white-space: nowrap;
+  min-width: 100%;
+  /* Adjust '30s' to change speed */
+  animation: scroll-rtl 30s linear infinite;
+}
+
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-rtl {
+  from {
+    /* Starts completely hidden on the left side */
+    transform: translateX(-100%);
+  }
+
+  to {
+    /* Ends completely hidden on the right side */
+    transform: translateX(100%);
+  }
+}
+
+
+
+
+
+
 /* Fade in animation */
 @keyframes fadeInUp {
   from {

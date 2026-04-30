@@ -36,7 +36,6 @@ export default function Navbar() {
   ];
 
   const waNumber = process.env.NEXT_PUBLIC_WA_NUMBER || "971XXXXXXXXX";
-  const Marquee = 'marquee' as any;
 
   return (
     <>
@@ -53,11 +52,12 @@ export default function Navbar() {
           </div>
 
           {/* Marquee Center */}
-          <div className="w-full sm:flex-1 overflow-hidden relative mx-0 sm:mx-4 flex items-center h-full mask-edges font-medium">
-            <Marquee direction="right" className="hover:text-[var(--color-gold)] transition-colors cursor-default" scrollamount="4">
+          <div className="w-full sm:flex-1 relative mx-0 sm:mx-4 flex items-center h-full font-medium marquee-container">
+            <div className="marquee-content whitespace-nowrap transition-colors hover:text-[var(--color-gold)]">
               📢 جديد الكتب: مدارج السالكين - للإمام ابن القيم الجوزية، مصحف القيام حجمين، القرآن تدبر وعمل حجمين 💡 قال العلامة ابن عثيمين رحمه الله: ينبغي لطالب العلم أن يحرص على جمع الكتب، ولكن يبدأ بالأهم فالأهم 📚 وقال رحمه الله: الكتب غذاء للروح كالطعام والشراب للبدن 📢
-            </Marquee>
+            </div>
           </div>
+
 
           {/* Social Icons */}
           <div className="flex items-center justify-center w-full sm:w-auto gap-3 shrink-0 bg-[var(--color-primary)] z-10 sm:pl-2">
