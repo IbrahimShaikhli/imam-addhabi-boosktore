@@ -32,7 +32,7 @@ export function searchBooks(query: string): Book[] {
 }
 
 export function buildWhatsAppLink(title: string, price: number): string {
-  const phone = process.env.NEXT_PUBLIC_WA_NUMBER || "971XXXXXXXXX";
+  const phone = process.env.NEXT_PUBLIC_WA_NUMBER || "971558493476";
   const message = encodeURIComponent(
     ` السلام عليكم ورحمة الله وبركاته أريد طلب كتاب: ${title} - السعر: ${price} درهم`
   );
