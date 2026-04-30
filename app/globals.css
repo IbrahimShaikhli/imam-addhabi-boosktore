@@ -146,7 +146,7 @@ body {
   white-space: nowrap;
   min-width: 100%;
   /* Adjust '30s' to change speed */
-  animation: scroll-rtl 30s linear infinite;
+  animation: scroll-rtl 50s linear infinite;
 }
 
 .marquee-container:hover .marquee-content {
