@@ -144,13 +144,10 @@ body {
   display: flex;
   white-space: nowrap;
   min-width: 100%;
-  animation: scroll-rtl 50s linear infinite;
+  animation: scroll-rtl 15s linear infinite;
+
 }
 
-/* Second copy starts immediately after the first — no gap */
-.marquee-content:nth-child(2) {
-  animation-delay: -25s;
-}
 
 .marquee-container:hover .marquee-content {
   animation-play-state: paused;
